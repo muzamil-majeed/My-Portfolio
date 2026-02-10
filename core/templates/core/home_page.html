@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+
+        </title>
+        <link rel="stylesheet" href="{% static 'core/home_page.css' %}">
+    </head>
+    <body>
+        <section id="header">
+            <div>
+                <a href="{% url 'home-page'%}">Home</a>
+                <a href="#">About</a>
+                <a href="#">contact</a>
+                <a href="#">Resume</a>
+            </div>
+        </section>
+
+
+        <section id="profile">
+            <div class="profile-text">
+                <h1>Hi, I'm Muzamil Majeed</h1>
+                <p>
+                    A passionate web developer focused on building clean,
+                    user-friendly, and responsive web applications using Django
+                    and modern front-end technologies.
+                </p>
+            </div>
+            <div class="profile-image">
+                <img src="{% static 'core/images/myprofile.png'%}" alt="PROFILE IMAGE">
+            </div>
+        </section>
+
+        <div class="section-divider">
+            <hr>
+        </div>
+
+    </body>
+</html>
