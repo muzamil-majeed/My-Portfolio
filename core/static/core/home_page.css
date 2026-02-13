@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -46,7 +50,7 @@ body {
 }
 
 .profile-text {
-    max-width: 600px;
+    max-width: 500px;
     margin-left: 50px;
 }
 
@@ -151,9 +155,63 @@ body {
     line-height: 30px;
     color: #333;
     margin-bottom: 20px;
+    margin-right: 50px;
 
 }
 
 .about-content strong{
-    color: hsl(261, 73%, 43%);;
+    color: hsl(261, 73%, 43%);
+}
+
+
+
+/* Skills */
+
+#skills {
+    padding: 50px 20px; 
+    text-align: center;
+}
+
+#skills h1 {
+    font-size: 40px; 
+    margin-bottom: 10px;
+    color:  hsl(261, 73%, 43%);
+}
+
+#skills p {
+    margin-bottom: 30px;
+    color: #555555;
+    font-size: 16px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; 
+}
+
+.skill {
+    width: 120px; 
+    text-align: center;
+}
+
+
+.skill img {
+    width: 80px;  
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    transition: transform 0.3s;
+}
+
+.skill:hover img {
+    transform: scale(1.1); 
+}
+
+
+.skill h3 {
+    font-size: 16px; 
+    color: #333333;
+    margin: 0;
 }
