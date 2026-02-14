@@ -1,26 +1,17 @@
+{% extends 'base.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>
 
-        </title>
-        <link rel="stylesheet" href="{% static 'core/home_page.css' %}">
-    </head>
-    <body>
-        <section id="header">
-            <div>
-                <a href="{% url 'home-page'%}">Home</a>
-                <a href="#about">About</a>
-                <a href="#">contact</a>
-                <a href="#">Resume</a>
-            </div>
-        </section>
+{% block title %}     {% endblock %}
+
+        {% block css_files %}
+         <link rel="stylesheet" href="{% static 'core/home_page.css' %}">
+        {% endblock %}
 
 
+        {% block content %}
         <section id="profile">
             <div class="profile-text">
-                <h1>Hi, I'm Muzamil Majeed</h1>
+                <h1>Muzamil Majeed</h1>
                 <p>
                     A passionate web developer focused on building clean,
                     user-friendly, and responsive web applications using Django
@@ -112,11 +103,9 @@
 
 
 
+        <div class="section-divider">
+            <hr>
+        </div>
+        
 
-
-
-
-
-
-    </body>
-</html>
+{% endblock %}
