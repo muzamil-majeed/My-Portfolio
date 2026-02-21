@@ -1,192 +1,140 @@
-html {
-    scroll-behavior: smooth;
-}
 
 body {
-    margin: 0;
+    background-color: #121212; 
+    color: #f0f0f0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
 }
 
-
-
-
-
-
-
-#profile{
-    display: flex;
-    justify-content:space-between;
-    padding: 80px 40px;
-    background-color: #f9f9f9;
-    gap: 60px;
-}
-
-.profile-text {
-    max-width: 500px;
-    margin-left: 50px;
-}
-
-.profile-text h1 {
-    font-size: 55px;
-    color: hsl(261, 73%, 43%);
-    margin-bottom: 15px;
-}
-
-.profile-text p {
-    max-width: 350px;
-    font-size: 18px;
-    line-height: 30px;
-    color: #333;
-}
-
-
-
-.profile-image img {
-    width: 400px;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 10px;
-    border: 4px solid #222;
-    margin-right: 40px;
-    margin-top: 40px;
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
-}
-
-
-
-@media (max-width: 900px) {
-    #profile {
-        flex-direction: column;
-        text-align: center;
-        padding: 60px 30px;
-    }
-
-    .profile-text h1 {
-        font-size: 38px;
-    }
-
-    .profile-text p {
-        font-size: 16px;
-        line-height: 26px;
-    }
-
-    .profile-image img {
-        width: 220px;
-        height: 220px;
-    }
-}
-
-
-.section-divider {
-    display: flex;
-    justify-content: center;
-  
-}
 
 .section-divider hr {
-    width: 80%;          
-    border: none;
-    border-top: 2px solid hsl(261, 73%, 43%);
-    margin: 40px 0;
-
+    border: 0;
+    height: 2px;
+    background: #2c2c2c;
+    margin: 50px 0;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
-/* about section */
-
-
-#about {
-    padding: 80px 40px;
-    background-color: #ffffff;
+#profile {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 90px 50px;
+    padding: 80px 50px;
     gap: 50px;
-    background-color: #ffffff;
+}
+
+#profile .profile-text h1 {
+    font-size: 48px;
+    color: #ff6b6b; 
+    margin-bottom: 20px;
+}
+
+#profile .profile-text p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+#profile .profile-image img {
+    width: 300px;
+    border-radius: 20px;
+    border: 3px solid #ff6b6b;
+    transition: transform 0.3s ease;
+}
+
+#profile .profile-image img:hover {
+    transform: scale(1.05);
 }
 
 
-.about-image img {
+#about {
+    display: flex;
+    gap: 50px;
+    padding: 80px 50px;
+    align-items: center;
+}
+
+#about .about-image img {
     width: 400px;
-    height: 400px;
-    object-fit: contain;
-    border-radius: 10px;
-    border: 5px solid  hsl(261, 73%, 43%);
-}
-.about-content{
-    max-width: 700px;
+    border-radius: 20px;
+    border: 3px solid #ff6b6b;
+    transition: transform 0.3s ease;
 }
 
-.about-content h1{
-    font-size: 40px;
-    color: hsl(261, 73%, 43%);
+#about .about-image img:hover {
+    transform: scale(1.05);
+}
+
+#about .about-content h1 {
+    font-size: 36px;
+    color: #ff6b6b;
     margin-bottom: 20px;
 }
 
-.about-content p{
-    font-size: 20px;
-    line-height: 30px;
-    color: #333;
-    margin-bottom: 20px;
-    margin-right: 50px;
-
+#about .about-content p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 15px;
 }
 
-.about-content strong{
-    color: hsl(261, 73%, 43%);
-}
-
-
-
-/* Skills */
 
 #skills {
-    padding: 50px 20px; 
+    padding: 80px 50px;
     text-align: center;
 }
 
 #skills h1 {
-    font-size: 40px; 
+    font-size: 36px;
+    color: #ff6b6b;
     margin-bottom: 10px;
-    color:  hsl(261, 73%, 43%);
 }
 
 #skills p {
-    margin-bottom: 30px;
-    color: #555555;
     font-size: 16px;
+    margin-bottom: 40px;
 }
 
 .skills-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px; 
+    gap: 30px;
 }
 
 .skill {
-    width: 120px; 
-    text-align: center;
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 15px;
+    width: 150px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 
 .skill img {
-    width: 80px;  
-    height: 80px;
-    object-fit: contain;
+    width: 60px;
     margin-bottom: 10px;
-    transition: transform 0.3s;
 }
-
-.skill:hover img {
-    transform: scale(1.1); 
-}
-
 
 .skill h3 {
-    font-size: 16px; 
-    color: #333333;
+    font-size: 16px;
     margin: 0;
+}
+
+.skill:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+}
+
+
+@media (max-width: 900px) {
+    #profile, #about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #profile .profile-image img, #about .about-image img {
+        width: 80%;
+    }
 }

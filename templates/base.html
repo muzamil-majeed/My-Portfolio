@@ -23,17 +23,37 @@
    
 
     <section id="header">
-        <div>
+        <div class="logo">
+            <img src="{% static 'core/images/profile.png'%}" alt="Logo">
+        </div>
+
+        <div class="nav-links">
             <a href="{% url 'home-page'%}">Home</a>
             <a href="#about">About</a>
-            <a href="{% url 'contact-page' %}">contact</a>
+            <a href="{% url 'contact-page' %}">Contact</a>
             <a href="#">Resume</a>
         </div>
     </section>
 
+
     {% block content %}
 
     {% endblock %}
+
+
+    <section id="footer">
+        <div class="email">
+        <p>📧 Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+        </div>
+        <div class="social">
+            <a href="https://github.com/yourusername">GitHub</a> |
+            <a href="https://linkedin.com/in/yourusername">LinkedIn</a> |
+            <a href="https://twitter.com/yourusername">Twitter</a>
+        </div>
+        
+        <p>&copy; 2026 Muzamil Majeed. All rights reserved.</p>
+    </section>
+
 
 </body>
 </html>
